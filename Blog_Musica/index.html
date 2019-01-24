@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/estilos.css'>
+    <script src='js/bootstrap.min.js'></script>
+    <title>Mi Musica Preferida</title>
+  </head>
+  <body class='cinema-body'>
+    <header>
+      <nav class='navbar navbar-inverse navbar-fixed-top affix-top navbar-dark bg-dark navbar-header'>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-10 col-md-10">
+              <img class='logo-img' src='img/logo-musica.jpg'/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-md-8 text-centered">
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Artistas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Grupos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Top 10</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Letras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Acordes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-centered" class='redes-sociales'>
+              <a href="#"><img class='img-rounded img-social' src='img/fb.png'/></a>
+              <a href="#"><img class='img-rounded img-social' src='img/ig.png'/></a>
+              <a href="#"><img class='img-rounded img-social' src='img/tt.png'/></a>
+            </div>
+          </div> <!-- row -->
+        </div>
+      </nav>
+    </header>
+    <div class='body-container-fluid'>
+      <div class='row'>
+        <div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+          <h1> Mi Blog de Musica Preferida</h1>
+          <h2> Tributo a los Beatles </h1>
+            El mejor tributo de Los Beatles en el mundo”,
+            según Rolling Stones Magazine, 1964 The Tribute,
+            se presentará por segunda ocasión en la Isla, el 12 de mayo, en Vivo Beach Club.
+            <br>
+            Formada hace 34 años en Estados Unidos,
+            el cuarteto se enfoca en los primeros años del mítico grupo inglés,
+            principalmente en la era que hizo sus primeras giras y con las que conquistó al mundo entero.
+            </br><br>
+            Esa magia por la que The Beatles se destacaba en sus presentaciones en vivo,
+            son revividas por Mark Benson, quien interpreta a John Lennon,
+            Mac Ruffing a Paul McCartney, Tom Work a George Harrison y Bobby Potter a Ringo Starr.
+            </br>
+        </div>
+        <!-- Formulario de Busqueda -->
+        <div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center'>
+        	<div id="search">
+        		<form id="search-form" action="" method="POST" enctype="multipart/form-data">
+        			<div class="form-group">
+        				<input class="form-control" type="text" placeholder="Busqueda" />
+              </div>
+        			<div class="form-group">
+        				<button type="submit" class="btn btn-block btn-primary">Busqueda</button>
+        			</div>
+        		</form>
+        		<form>
+        			<div class="form-group">
+        				<select data-filter="make" class="filter-make filter form-control">
+        					<option value="">Selecionar Genero</option>
+        					<option value="">Rock</option>
+                  <option value="">Baladas</option>
+                  <option value="">Pop</option>
+        				</select>
+        			</div>
+        			<div class="form-group">
+        				<select data-filter="model" class="filter-model filter form-control">
+        					<option value="">Seleccionar Artista</option>
+        					<option value="">Bee Gees</option>
+                  <option value="">Beatles</option>
+                  <option value="">Aereosmith</option>
+        				</select>
+        			</div>
+        			<div class="form-group">
+        				<select data-filter="type" class="filter-type filter form-control">
+        					<option value="">Seleccionar Cancion</option>
+        					<option value="">All My Love</option>
+        				</select>
+        			</div>
+        			<div class="form-group">
+        				<select data-filter="price" class="filter-price filter form-control">
+        					<option value="">Seleccionar anio de Creacion</option>
+        					<option value="">1996</option>
+                  <option value="">1997</option>
+                  <option value="">1998</option>
+        				</select>
+        			</div>
+        		</form>
+        	</div><!-- search -->
+        </div>
+      </div><!-- row -->
+      <div class='row'>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-left clear">
+          <hr><h3>Deje su Comentario</h3>
+        </div>
+         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-left">
+           <div class="container-fluid well span8">
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <form accept-charset="UTF-8" action="" method="POST">
+                          <textarea class="form-control counted" name="message" placeholder="Digite un Mensaje" rows="5" style="margin-bottom:10px;"></textarea>
+                          <h6 class="pull-right" id="counter">320 characters remaining</h6>
+                          <button class="btn btn-info" type="submit">Comentar</button>
+                      </form>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+          <h2> Bee Gees fueron homenajeados por John Travolta y Celine Dion</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-8 col-sm-8 col-md-8 col-lg-8 text-left'>
+          <br>
+          NOTICIAS
+          </br><br>
+          Bee Gees fueron homenajeados por John Travolta y Celine Dion
+          </br><br>
+          ‘Stayin Alive: A Grammy Salute to the Music of the Bee Gees, un homenaje a los Bee Gees, fue el programa más visto en la teleaudiencia de EE.UU., en CBS, el último domingo, pese a que se grabó hace dos meses y recién fue difundido.
+          </br><br>
+          El tributo a los Bee Gees tuvo una gran acogida con 10,3 millones de televidentes, que estuvieron desde las 8 p.m. hasta las 10 p.m., superando las dos últimas emisiones de los domingos, en CBS.
+          </br><br>
+          En el homenaje a los Bee Gees estuvieron Celine Dion, Demi Lovato, John Travolta, y los hermanos Nick y Joe Jonas, quienes se unieron para saludar a Barry Gibb, el único sobreviviente del grupo.
+          </br>
+        </div>
+        <div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center'>
+        </div>
+      </div> <!-- row -->
+      <div class='row'>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-left clear">
+          <hr><h3>Deje su Comentario</h3>
+        </div>
+         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-left">
+           <div class="container-fluid well span8">
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <form accept-charset="UTF-8" action="" method="POST">
+                          <textarea class="form-control counted" name="message" placeholder="Digite un Mensaje" rows="5" style="margin-bottom:10px;"></textarea>
+                          <h6 class="pull-right" id="counter">320 characters remaining</h6>
+                          <button class="btn btn-info" type="submit">Comentar</button>
+                      </form>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center'>
+        </div>
+      </div>
+    </div> <!--container-fluid -->
+  </body>
+</html>

@@ -1,0 +1,305 @@
+.cinema-body {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 15%;
+}
+
+.navbar-inverse {
+  background-color: rgba(8, 45, 94, 0.95);
+  min-height: 10%;
+  border: none;
+}
+
+.logo-img {
+  width: 100px;
+  margin-bottom: 2%;
+}
+
+
+.btn, .navbar-btn {
+  align: centered;
+  padding: 10px 60px !important;
+}
+
+.redes-sociales {
+  float: right;
+  margin-top: 30px;
+}
+
+.img-social {
+  width: 40px;
+  height: 40px;
+  margin: 2% 0 2% 2%;
+}
+
+.img-movies {
+  height: 260px;
+  padding: 6px;
+  margin-top: 22px;
+}
+
+.movie-title {
+  color: #FFFFFF;
+}
+
+.welcome-title {
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.titulo-cartelera {
+  min-height: 35px;
+  background-color: rgba(8, 45, 94, 0.95);
+}
+
+.titulo-text {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.movies-row {
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 350px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.movies-column {
+  margin-top: 5px;
+  min-height: 330px;
+  border: 1px dashed #FFFFFF;
+}
+.left-column {
+  border-right: 1px dashed #FFFFFF;
+}
+
+.row-centered {
+  text-align:center;
+}
+
+.services-text {
+  color: #FFFFFF;
+  margin-top: 13px;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+}
+
+.row {
+  margin: auto !important;
+  padding-left: 3%;
+}
+
+@media (max-width: 770px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .titulo-text {
+    font-size: 15px;
+  }
+
+  .right-column {
+    display: none;
+  }
+
+  .movies-row {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 250px;;
+  }
+
+  .container-fluid{
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .movies-column {
+    min-height: 230px;
+  }
+
+  .jumbotron {
+    min-height: 400px;
+  }
+
+  .jumbotron-img {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .img-movies {
+    height: 133px;
+    padding: 6px;
+    margin-top: 22px;
+  }
+  .cinema-body {
+    padding-top: 85%;
+  }
+}
+
+
+/* Add an active class to highlight the current page */
+.active {
+ background-color: #4CAF50;
+ color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon .btn .navbar-btn {
+ display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+ float: left;
+ overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+ font-size: 17px;
+ border: none;
+ outline: none;
+ color: white;
+ padding: 14px 16px;
+ background-color: inherit;
+ font-family: inherit;
+ margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+ float: none;
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+ background-color: #555;
+ color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+ .topnav a:not(:first-child), .dropdown .dropbtn .btn .navbar-btn button {
+   display: none;
+ }
+ .topnav a.icon {
+   float: right;
+   display: block;
+ }
+}
+.navbar-inverse .navbar-nav > li > a {
+    padding: 5px 12px;
+    margin: 0;
+    border-radius: 3px;
+    color: #2ab9e7;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    padding-left:0;
+    padding-right:0;
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+ .topnav.responsive {position: relative;}
+ .topnav.responsive a.icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+ .topnav.responsive a {
+   float: none;
+   display: block;
+   text-align: left;
+ }
+ .topnav.responsive .dropdown {float: none;}
+ .topnav.responsive .dropdown-content {position: relative;}
+ .topnav.responsive .dropdown .dropbtn {
+   display: block;
+   width: 100%;
+   text-align: left;
+ }
+
+  .body-container-fluid {
+   margin-top: 40%;
+ }
+
+}

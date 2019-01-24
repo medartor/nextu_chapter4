@@ -1,0 +1,45 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-blend-mode: soft-light;
+    background-color: lightsalmon;
+    font-family: arial;
+}
+a.button {
+    background-color: darkmagenta !important;
+}
+
+a.button:hover {
+    background-color: darkslateblue !important;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+h2, h3, h4 {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+ .background2 {
+    background-color: rgba(154, 18, 179, 0.6);
+     z-index: -1;
+}
+
+.aside {
+    background-color: lightsalmon;
+    z-index: 100;
+}
+
+.contenido {
+    background-color: #EE82EE;
+    background-blend-mode: soft-light;
+    z-index: 100 !important;
+}
